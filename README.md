@@ -2,6 +2,11 @@
 
 This repo is used as a base for the Consuming API lesson taught in Backend Module 3. To complete the lesson you will need to sign-up for an API key from the [ProPublica Congress API](https://projects.propublica.org/api-docs/congress-api/).
 
+### Versions
+
+Rails 5.1.7
+Ruby 2.5.3
+
 ### Setup
 
 ```bash
