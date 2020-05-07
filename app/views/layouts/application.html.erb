@@ -1,14 +1,33 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HouseSaladBase</title>
-    <%= csrf_meta_tags %>
+    <title>HouseSalad</title>
+    <%= csrf_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" title="reset" />
+    <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <%= link_to "HouseSalad", root_path, class: "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <%= form_tag :search, method: :get, class: "form-inline" do %>
+            <div class="form-group search-field">
+              <%= select_tag :state, options_for_select(us_states) %>
+              <%= submit_tag "Locate Members of the House", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
+
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>
