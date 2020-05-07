@@ -20,6 +20,7 @@ rails db:{create,migrate}
 ### Exercise
 
 Write a test and complete this user story
+
 *NOTE: Please use the existing form in the application.*
 
 ```
