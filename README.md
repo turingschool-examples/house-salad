@@ -4,7 +4,7 @@ This repo is used as a base for the Consuming API lesson taught in Backend Modul
 
 ### Versions
 
-Rails 5.1.7
+Rails 5.2.4.3
 Ruby 2.5.3
 
 ### Setup
