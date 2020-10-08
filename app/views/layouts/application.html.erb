@@ -16,18 +16,19 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <%= form_tag :search, method: :get, class: "form-inline" do %>
+          <%= form_with url: search_path, method: :get, local: true, class: "form-inline" do |f| %>
             <div class="form-group search-field">
-              <%= select_tag :state, options_for_select(us_states) %>
-              <%= submit_tag "Locate Members of the House", class: "btn btn-primary" %>
+              <%= f.select :state, options_for_select(us_states) %>
+              <%= f.submit 'Locate Members of the House', class: 'btn btn-primary' %>
             </div>
           <% end %>
         </ul>
       </div>
     </nav>
 
+    <section id="main">
     <%= yield %>
-
+    </section>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
