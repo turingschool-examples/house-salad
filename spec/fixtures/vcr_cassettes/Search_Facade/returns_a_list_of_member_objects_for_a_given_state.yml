@@ -27,27 +27,27 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 12 Oct 2020 16:18:20 GMT
+      - Mon, 12 Oct 2020 16:18:19 GMT
       X-Amzn-Requestid:
-      - 31f8fce4-0dbb-4c72-95d3-778caba548c7
+      - 07b8a94e-ee7b-4057-95c5-62b9a2eade4d
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
       X-Amz-Apigw-Id:
-      - UTk35GhOoAMFZRQ=
+      - UTk3xGxFIAMF6Cg=
       Access-Control-Allow-Methods:
       - GET,OPTIONS
       X-Amzn-Trace-Id:
-      - Root=1-5f8481cc-4855f0ae59f99b840e457842
+      - Root=1-5f8481cb-0461595e0d72b5d85227e239
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ca8e903e4e5be443721508880719fc23.cloudfront.net (CloudFront)
+      - 1.1 57b168601bfabb35431b6124d1c8c3f7.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DFW55-C1
       X-Amz-Cf-Id:
-      - 6OyQdigrbC2oEs5XUvWdRix71l7oHv-C9ady7Lq958Yv7nAbJ0XwgA==
+      - 3l7QPuaw1nw4VwJN4bI3a3BZtjEPiOavuK8gTsaxmGo0W7oE8DfLcw==
     body:
       encoding: UTF-8
       string: |
@@ -196,5 +196,5 @@ http_interactions:
                  "at_large": false
               }
         ]}
-  recorded_at: Mon, 12 Oct 2020 16:18:20 GMT
+  recorded_at: Mon, 12 Oct 2020 16:18:19 GMT
 recorded_with: VCR 6.0.0
