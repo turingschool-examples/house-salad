@@ -1,9 +1,9 @@
 <h1><%= @members.count %> Results</h1>
 <% @members.each do |member| %>
-  <section class="member <%= member[:party] %>">
-    <h3 class="name"><%= member[:name] %></h3>
-    <p class="role"><%= member[:role] %></p>
-    <p class="party"><%= member[:party] %></p>
-    <p class="district"><%= member[:district] %></p>
+  <section class="member <%= member.party %>">
+    <h3 class="name"><%= member.name %></h3>
+    <p class="role"><%= member.role %></p>
+    <p class="party"><%= member.party %></p>
+    <p class="district"><%= member.district %></p>
   </section>
 <% end %>
