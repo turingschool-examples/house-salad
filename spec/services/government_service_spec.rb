@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe GovernmentService do
-  it 'fetch member data by state' do
+  it 'fetch member data by state', :vcr do
     search_results = GovernmentService.members_of_house('CO')
 
     expect(search_results).to be_a(Hash)
