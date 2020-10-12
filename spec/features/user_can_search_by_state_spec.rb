@@ -1,7 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe 'user can search for house members' do
-  it 'user submits valid state name' do
+  it 'does something else' do
+    VCR.use_cassette('members_for_colorado', re_record_interval: 1.hour) do
+      visit root_path
+
+      select 'Colorado', from: :state
+      click_button 'Locate Members of the House'
+    end
+  end
+
+  it 'user submits valid state name', :vcr do
+
     visit root_path
 
     select 'Colorado', from: :state
