@@ -15,7 +15,7 @@
         <%= link_to "HouseSalad", root_path, class: "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav pad14">
           <%= form_with url: search_path, method: :get, local: true, class: "form-inline" do |f| %>
             <div class="form-group search-field">
               <%= f.select :state, options_for_select(us_states) %>

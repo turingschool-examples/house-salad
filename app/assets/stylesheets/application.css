@@ -60,25 +60,9 @@
     list-style: "→" inside none;
 }
 
-#main h3 {
-    font-size: 14pt;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    padding-top: 10px;
-}
-
-#main .role,.party,.district {
-    padding-left: 10px;
-}
-
-#main .member {
-    margin: 5px;
-    padding: 5px;
-}
-
-#main .D {
-    background-color: lightsteelblue;
-}
-
-#main .R {
-    background-color: lightcoral;
+.pad14 {
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
